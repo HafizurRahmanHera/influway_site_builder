@@ -1,0 +1,218 @@
+/*Main Menu Start*/ 
+.menu_all {  
+    background: #fff;
+    z-index: 10;
+    transition: 0.7s ease;
+}
+.menu_fixed {
+    position: fixed;
+    top: 0;
+    transform: translateY(0);
+    width: 100%;
+    z-index: 9;
+    transition: all 0.4s;
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.15);
+    animation: slide-down 0.9s;
+}
+.dis_flx{display: flex;}
+.logo a {
+    display: flex;
+    align-items: center;
+}
+.menu_influway{
+    display: flex;
+    justify-content: space-between;
+        align-items: center;
+}
+.menu_right {
+    justify-content: flex-end;
+}
+.menu_right_list{}
+.menu_right_ul {
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+.menu_right_ul li {
+      margin-right: 20px;
+    position: relative;
+    list-style: none;
+}
+/*.arrow{
+    position: relative;
+}
+.arrow:after {
+  position: absolute;
+    content: "\f107";
+    top: 25px;
+    color: #000;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    font-family: "Font Awesome 5 Free";
+    right: -16px;
+    font-weight: 600;
+}*/
+.arrow:hover:after {
+    transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+}
+.menu_right_ul li a {
+    color: #4a4949;
+    font-size: 14px;
+    padding: 25px 0px;
+    display: block;
+    position: relative;
+    text-decoration: none;
+}
+.menu_right_drpdown {
+    opacity: 0;
+    visibility: hidden;
+    width: 240px;
+    z-index: 5;
+    position: absolute;
+    background: #fff;
+    top: 80px;
+    transition: .5s ease-in-out;
+    border-top: 2px solid #fec722;
+    box-shadow: 0 1px 5px -1px rgba(0, 0, 0, 0.3);
+}
+.menu_right_ul li:hover .menu_right_drpdown{
+    top: 70px;
+    visibility: visible;
+    opacity: 1;
+}
+.menu_right_drpdown li {
+    margin: 0px;
+    padding: 0px 15px;
+}
+.menu_right_drpdown li:hover {
+   background-color: #eceaea;
+}
+.menu_right_drpdown li a {
+    padding: 15px 0px;
+    position: relative;
+}
+.menu_right_drpdown li a:hover {
+    padding: 15px 0px 15px 7px;
+    transition: 0.3s ease;
+}
+.menu_right_drpdown li a:after {
+    position: absolute;
+    content: '';
+    width: 0px;
+    background-color: #aba0a0;
+    height: 1px;
+    top: 25px;
+    left: 0px;
+    display: none;
+    transition:.3s ease-in-out;
+}
+.menu_right_drpdown li a:hover:after{
+    display: block;
+    width: 15px;
+    transition: .3s ease-in-out;
+    left: -10px;
+}
+.active .menu_right_drpdown a:before{
+    background: transparent; 
+    height: 0px;
+}
+.logo_img{
+}
+.logo_img img{
+    width: auto;
+    height: 35px;
+}
+.logo_title {
+    padding-left: 5px;
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.menu_srch {
+    align-items: center;
+    margin-left: 40px;
+    cursor: pointer;
+}
+.menu_srch i{position: relative;}
+.menu_srch_one{}
+.menu_srch_one input{}
+.menu_srch_one i{}
+.menu_srch_two{}
+.menu_srch_two i{}
+/*#search {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        background-color: rgba(0, 0, 0, 0.95);
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        opacity:0;
+        visibility: hidden;
+        pointer-events: none;
+    }*/
+
+    /*#search
+    #search.open {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: visible;
+    }
+    #search input[type="search"] {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        color: #fff;
+        background: transparent;
+        font-size: 40px;
+        font-weight: 300;
+        text-align: center;
+        border: 0px;
+        margin: 0px auto;
+        margin-top: -51px;
+        padding-left: 30px;
+        padding-right: 30px;
+        outline: none;
+    }
+    #search .btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: 50px;
+        margin-left: -40px;
+        background: #fec722;
+        border-radius: 2px;
+        padding: 7px 16px;
+        color: #333333;
+        font-weight: 700;
+    }
+    #search .close {
+        background-color: #fec722;
+        border-color: #ffb600;
+        border-radius: 3px;
+        color: #333333;
+        font-size: 21px;
+        opacity: 1;
+        padding: 0 0px 4px;
+        position: fixed;
+        right: 15px;
+        top: 15px;
+        height: 30px;
+        width: 32px;
+        text-align: center;
+    }
+
+    
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }*/
+/****====== Menu End =====***/
